@@ -12,6 +12,9 @@
 		620C4FCB2385DBF9001500FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 620C4FCA2385DBF9001500FE /* Assets.xcassets */; };
 		620C4FCE2385DBF9001500FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620C4FCC2385DBF9001500FE /* LaunchScreen.storyboard */; };
 		620C4FD12385DBF9001500FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 620C4FD02385DBF9001500FE /* main.m */; };
+		E21ACE73246353CF00565A0A /* PJPCityAirQuality.m in Sources */ = {isa = PBXBuildFile; fileRef = E21ACE72246353CF00565A0A /* PJPCityAirQuality.m */; };
+		E21ACE76246355BC00565A0A /* PJPPollution.m in Sources */ = {isa = PBXBuildFile; fileRef = E21ACE75246355BC00565A0A /* PJPPollution.m */; };
+		E21ACE79246355C900565A0A /* PJPWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = E21ACE78246355C900565A0A /* PJPWeather.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,12 @@
 		620C4FCD2385DBF9001500FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		620C4FCF2385DBF9001500FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		620C4FD02385DBF9001500FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E21ACE71246353CF00565A0A /* PJPCityAirQuality.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PJPCityAirQuality.h; sourceTree = "<group>"; };
+		E21ACE72246353CF00565A0A /* PJPCityAirQuality.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PJPCityAirQuality.m; sourceTree = "<group>"; };
+		E21ACE74246355BC00565A0A /* PJPPollution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PJPPollution.h; sourceTree = "<group>"; };
+		E21ACE75246355BC00565A0A /* PJPPollution.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PJPPollution.m; sourceTree = "<group>"; };
+		E21ACE77246355C900565A0A /* PJPWeather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PJPWeather.h; sourceTree = "<group>"; };
+		E21ACE78246355C900565A0A /* PJPWeather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PJPWeather.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				620C4FD72385DDA8001500FE /* Resources */,
+				E21ACE702463535E00565A0A /* model */,
 			);
 			path = "AirQuality ObjC";
 			sourceTree = "<group>";
@@ -74,6 +84,19 @@
 				620C4FD02385DBF9001500FE /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E21ACE702463535E00565A0A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E21ACE71246353CF00565A0A /* PJPCityAirQuality.h */,
+				E21ACE72246353CF00565A0A /* PJPCityAirQuality.m */,
+				E21ACE74246355BC00565A0A /* PJPPollution.h */,
+				E21ACE75246355BC00565A0A /* PJPPollution.m */,
+				E21ACE77246355C900565A0A /* PJPWeather.h */,
+				E21ACE78246355C900565A0A /* PJPWeather.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,9 +125,9 @@
 		620C4FB32385DBF6001500FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = DVM;
+				CLASSPREFIX = PJP;
 				LastUpgradeCheck = 1120;
-				ORGANIZATIONNAME = "RYAN GREENBURG";
+				ORGANIZATIONNAME = "Pete Parks";
 				TargetAttributes = {
 					620C4FBA2385DBF6001500FE = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -147,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E21ACE76246355BC00565A0A /* PJPPollution.m in Sources */,
+				E21ACE79246355C900565A0A /* PJPWeather.m in Sources */,
 				620C4FC02385DBF6001500FE /* AppDelegate.m in Sources */,
+				E21ACE73246353CF00565A0A /* PJPCityAirQuality.m in Sources */,
 				620C4FD12385DBF9001500FE /* main.m in Sources */,
 				620C4FC32385DBF6001500FE /* SceneDelegate.m in Sources */,
 			);
