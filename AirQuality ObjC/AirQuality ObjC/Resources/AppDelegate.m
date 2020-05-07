@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PJPCityAirQualityController.h"
 
 @interface AppDelegate ()
 

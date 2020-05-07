@@ -10,5 +10,21 @@
 
 @implementation PJPPollution
 
+-(instancetype)initWithAirQuality:(NSInteger)airQualityIndex {
+    if (self = [super init]) {
+        _airQualityIndex = airQualityIndex;
+    }
+    return self;
+}
 @end
 
+@implementation PJPPollution (JSONConvertable)
+
+
+-(instancetype)initWithDictionary:(NSDictionary<NSString *,id> *)airQualityDictionary {
+    //NSDictionary *pollution = airQualityDictionary[@"pollution"];
+    NSInteger airQuality = [airQualityDictionary[@"aqius"] integerValue];
+    return [self initWithAirQuality: airQuality];
+}
+
+@end

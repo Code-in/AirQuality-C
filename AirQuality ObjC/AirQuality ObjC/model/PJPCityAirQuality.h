@@ -10,6 +10,7 @@
 
 #import "PJPPollution.h"
 #import "PJPWeather.h"
+#import "PJPPollution.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,10 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly)NSString *country;
 
 
+
 @property (nonatomic, readonly)PJPPollution *pollution;
 @property (nonatomic, readonly)PJPWeather *weather;
 
--(instancetype) initWithCityName:(NSString *)city state:(NSString *)state country:(NSString *)country;
+-(instancetype) initWithCityName:(NSString *)city state:(NSString *)state country:(NSString *)country weather:(PJPWeather *)weather pollution:(PJPPollution *)pollution;
 
 
 @end
